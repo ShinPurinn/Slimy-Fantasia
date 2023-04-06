@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  font-family: 'Sofia', 'AbeeZee';
+  background-image: linear-gradient(to right, #0a031d, #480838, #580838, #480838, #0a031d);
+  overflow: auto;
+  user-select: none;
+}
+
+.game-background {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	transition: background-image 1s ease-in-out;
+}
+
+.header {
+  background-color: #0a031d;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px #7e5c56;
+  position: relative;
+}
+
+.header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  color: white;
+}
+
+.header h1 {
+  margin-bottom: 40px;
+}
+
+.clock {
+	font-family: 'Sofia';
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #4f3222;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 9%;
+  width: 25%;
+  left: 37%;
+}
+
+#slimeBox {
+  position: absolute;
+  top: 45%;
+  left: 37%;
+  width: 25%;
+  height: 30%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slime {
+  position: absolute;
+}
+
+#countButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0a031d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #353e45;
+  position: absolute;
+  top: 25%;
+  width: 25%;
+  left: 37%;
+  font-family: 'Sofia';
+  text-shadow: 2px 2px 5px #4f3222;
+  white-space: pre-line;
+}
+
+#countButton:hover {
+  background-color: #000036;
+}
+
+#countButton:active {
+  background-color: #000036;
+  box-shadow: 0 5px #212121;
+  transform: translateY(4px);
+}
+
+#displayCount {
+  font-family: 'Sofia';
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #4f3222;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 17%;
+  width: 25%;
+  left: 37%;
+}
+
+#resetButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0a031d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #353e45;
+  position: absolute;
+  top: 85%;
+  width: 25%;
+  left: 37%;
+  font-family: 'Sofia';
+  text-shadow: 2px 2px 5px #4f3222;
+  white-space: pre-line;
+}
+
+#resetButton:hover {
+  background-color: #000036;
+}
+
+#resetButton:active {
+  background-color: #000036;
+  box-shadow: 0 5px #212121;
+  transform: translateY(4px);
+}
+
+.btn-group {
+  position: absolute;
+  left: 25px;
+  width: 25%;
+}
+
+.btn-group button {
+  background-color: #580838;
+  border: 1px #5a2a63;
+  border-radius: 10px;
+  color: white;
+  font-family: 'AbeeZee';
+  font-size: 13px;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin: 5px;
+  position: relative;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none;
+}
+
+.btn-group button:hover {
+  background-color: #480838;
+}
+
+.btn-group h2 {
+  color: white;
+  text-shadow: #5a2a63;
+  position: relative;
+  text-align: center;
+}
+
+.multiplier {
+  font-size: 14px;
+  font-family: 'AbeeZee';
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.multiplier-level {
+  color: white;
+  font-size: 12px;
+  font-family: 'AbeeZee';
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.member {
+  background-color: #0a031d;
+  width: 300px;
+  height: 450px;
+  margin: 10px;
+  padding: 10px 5px;
+  border-radius: 15px;
+  box-shadow: 0 9px #353e45;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.member img {
+  position: flex;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.member h2 {
+  font-family: 'Sofia';
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 5px #4f3222;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.member p {
+  font-family: 'AbeeZee';
+  font-size: 14px;
+  color: white;
+  padding: 0 20px;
+}
+
+.references {
+  padding: 20px;
+  text-align: center;
+}
+
+.references h2 {
+  font-family: 'Sofia';
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 5px #4f3222;
+  margin-bottom: 10px;
+}
+
+.references ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.references li {
+  font-family: 'AbeeZee';
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.references a {
+  color: white;
+  text-decoration: none;
+}
+
+.references a:hover {
+  color: #ddd;
+}
+
+#abubgm {
+  background-color: #0a031d;
+  color: white;
+  padding: 10px;
+  border: 4px solid transparent;
+  border-radius: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPeduli</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="startGame()">
+    <div class="header">
+        <nav>
+            <a href="index.html">Home</a> / <a href="about.html">About Us</a>
+        </nav>
+        <h1>Slimy Fantasia</h1>
+        <audio id="bgm" autoplay loop>
+			<source src="BGM/BGM.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+    </div>
+
+    <div>
+        <div class="clock">
+			<span id="clock"></span>
+		</div>
+        <input type="button" value="Summon Slime" id="countButton"><span id="displayCount">0</span><br>
+        <div id="slimeBox">
+            <img id="imgs" src="imgs/a1.gif" id="img" draggable="false" class="slime">
+        </div>
+        <input type="button" value="Tactical Nuke" id="resetButton" />
+    </div>
+
+    <div>
+        <div class="btn-group">
+            <button onclick="toggleBGM()">Toggle BGM</button>
+            <h2>upgrades</h2>
+            <button id="spellButton">AUTOSUMMON SLIME <br>price: 150 slimes <br>1 slime/sec <br>lvl: <span id="spellLvl">0</span></button>
+            <button id="fairyButton">HELPFUL FAIRY <br>price: 1 300 slimes <br>10 slimes/sec <br>lvl: <span id="fairyLvl">0</span></button>
+            <button id="dryadButton">FOREST DRYAD <br>price: 10 000 slimes <br>1 000 slimes/sec <br>lvl: <span id="dryadLvl">0</span></button>
+            <button id="multiplierButton">MULTIPLIER <br>price: <span id="multiprice">250</span> slimes <br>x2 per click <br>lvl: <span id="multiLvl">0</span></button>
+        </div>
+
+        <div id="notification" class="notification"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
