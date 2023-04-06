@@ -2,6 +2,7 @@
 Slimy Fantasia is a simple idle clicker browser-based game where player summon slimes by clicking a button and can purchase upgrades to increase their slime summoning rate. The game features a dynamic background that changes based on the time of day and random weather events.
 
 # Github Link
+https://github.com/ShinPurinn/Slimy-Fantasia
 
 # Created by
 - 00000075936 - Cliff Reynard
